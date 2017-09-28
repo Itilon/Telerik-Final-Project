@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Elvish;
+    src: url("../fonts/elvish ring nfi.ttf");
+}
 html, body, header, nav, dir, ul, li {
     margin: 0;
     padding: 0;
@@ -8,9 +12,23 @@ html {
 body {
     font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
 }
+
+a, a:active, a:link, a:hover {
+    text-decoration: none;
+}
+
+/* Logo & Navigation: */
+
 #main-header {
     background: url("../images/top-wrapper-bg.jpg");
     padding: 20px 0;
+}
+#logo {
+    width: 68.5%;
+    margin: 65px auto 35px auto;
+    color: #ffffff;
+    font-family: Elvish;
+    padding-left: 28px;
 }
 #main-navigation {
     width: 68.5%;
@@ -26,9 +44,8 @@ body {
 #main-navigation a {
     display: inline-block;
     color: #ffffff;
-    text-decoration: none;
     font-size: 1.2rem;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 #main-navigation a:hover {
     color: #8d96a0;
@@ -37,4 +54,84 @@ body {
     color: #8d96a0;
     font-style: italic;
     font-family: Georgia, serif;
+}
+
+/* Main Section */
+
+#main-section {
+    background: url("../images/content-bg.png");
+}
+#content-wrapper {
+    background: url("../images/content-shadow-bg.png") repeat-x top left;
+    padding-top: 70px;
+    padding-bottom: 38px;
+}
+#up-section {
+    width: 68.5%;
+    margin: 0 auto;
+}
+#up-section .icon {
+    width: 12.4%;
+    float: left;
+    margin-right: 8%;
+}
+#up-section .text {
+    width: 75%;
+    float: left;
+}
+#up-section h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1f262d;
+    font-family: 'Open Sans Condensed', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+#up-section p {
+    color: #838383;
+    line-height: 2.1rem;
+    font-size: 1.2rem;
+}
+#up-section .read-more {
+    background: url("../images/read-more.png") no-repeat right bottom;
+    color: #1c2329;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    display: block;
+    float: right;
+}
+.read-more span {
+    background: url("../images/read-more.png");
+    height: 2.4rem;
+    display: block;
+    padding: 0 2px 0 10px;
+}
+
+/* Footer: */
+
+#main-footer {
+    background: url("../images/top-wrapper-bg.jpg");
+    padding: 20px 0;
+}
+#footer-section {
+    width: 68.5%;
+    margin: 0 auto;
+}
+#footer-section h4, #footer-section p {
+    padding-left: 20.5%;
+}
+#footer-section h4 {
+    color: #ffffff;
+    font-family: 'Open Sans Condensed', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#footer-section p {
+    color: #8b949d;
+    line-height: 2.1rem;
+    font-size: 1.2rem;
 }
