@@ -6,7 +6,12 @@ System.config({
    'systemjs-babel-build': '../node_modules/systemjs-plugin-babel/systemjs-babel-browser.js',
 
    // App Files:
-   'main': './scripts/main.js'
+   'main': './scripts/main.js',
+
+   // Library Files:
+   'jquery': '../node_modules/jquery/dist/jquery.min.js',
+   'bootstrap': '../node_modules/bootstrap/dist/js/bootstrap.min.js',
+   'sammy': '../node_modules/sammy/lib/sammy.js'
   }
 });
 
