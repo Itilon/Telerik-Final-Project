@@ -1,0 +1,12 @@
+{
+  "name": "envisioned",
+  "version": "1.0.0.",
+  "description": "",
+  "main": "main.js",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "systemjs": "^0.20.19",
+    "systemjs-plugin-babel": "0.0.25"
+  }
+}
