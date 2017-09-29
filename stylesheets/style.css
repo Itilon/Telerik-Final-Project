@@ -114,14 +114,11 @@ a, a:active, a:link, a:hover {
 
 #main-footer {
     background: url("../images/top-wrapper-bg.jpg");
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 }
 #footer-section {
     width: 68.5%;
     margin: 0 auto;
-}
-#footer-section h4, #footer-section p {
-    padding-left: 20.5%;
 }
 #footer-section h4 {
     color: #ffffff;
@@ -134,4 +131,35 @@ a, a:active, a:link, a:hover {
     color: #8b949d;
     line-height: 2.1rem;
     font-size: 1.2rem;
+}
+#secondary-footer {
+    background: url("../images/footer-bottom-bg.png") repeat-x;
+    margin-top: 48px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+#secondary-footer .container {
+    width: 68.5%;
+    margin: 0 auto;
+}
+#footer-navigation li {
+    display: inline-block;
+    padding: 0 10px;
+}
+#footer-navigation a {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+#footer-navigation a:hover {
+    color: #8d96a0;
+}
+#footer-navigation li:first-child {
+    padding-left: 0;
+}
+#footer-navigation li:first-child a {
+    color: #8d96a0;
+    font-style: italic;
+    font-family: Georgia, serif;
 }
