@@ -111,11 +111,13 @@ a, a:active, a:link, a:hover {
 }
 #quote-wrapper {
     background: url("../images/quote-inner-bg.png") repeat-x;
-    padding: 40px 0;
+    height: 160px;
+    overflow: hidden;
 }
 #quote-wrapper .container {
     width: 68.5%;
     margin: 0 auto;
+    padding-top: 36px;
 }
 #quote-text {
     color: #343434;
