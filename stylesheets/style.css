@@ -61,7 +61,7 @@ a, a:active, a:link, a:hover {
 #main-section {
     background: url("../images/content-bg.png");
 }
-#content-wrapper {
+#content-wrapper, #picture-wrapper {
     background: url("../images/content-shadow-bg.png") repeat-x top left;
     padding-top: 70px;
     padding-bottom: 38px;
@@ -108,6 +108,36 @@ a, a:active, a:link, a:hover {
     height: 2.4rem;
     display: block;
     padding: 0 2px 0 10px;
+}
+#quote-wrapper {
+    background: url("../images/quote-inner-bg.png") repeat-x;
+    padding: 40px 0;
+}
+#quote-wrapper .container {
+    width: 68.5%;
+    margin: 0 auto;
+}
+#quote-text {
+    color: #343434;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#picture-wrapper .container {
+    width: 82.2%;
+    margin: 0 auto;
+}
+#picture-wrapper .img-container {
+    background: #ffffff;
+    height: 94px;
+    margin-right: 18px;
+    margin-bottom: 42px;
+    border: 1px solid #8b949d;
+    padding: 3px;
+}
+#picture-wrapper .thumbnail {
+    height: 100%;
+    background-size: cover;
 }
 
 /* Footer: */
