@@ -36,7 +36,7 @@ a, a:active, a:link, a:hover {
 }
 #main-navigation {
     width: 68.5%;
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
     background-color: #3A434D;
     padding: 15px 0 14px 22px;
     border-radius: 10px;
@@ -58,6 +58,16 @@ a, a:active, a:link, a:hover {
     color: #8d96a0;
     font-style: italic;
     font-family: Georgia, serif;
+}
+
+/* Image Slider */
+
+#img-slider .slider-img-container {
+    margin: 88px 0 154px 0;
+}
+#img-slider .slider-img {
+    height: 168px;
+    background-size: cover;
 }
 
 /* Main Section */
