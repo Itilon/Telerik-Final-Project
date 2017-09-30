@@ -65,8 +65,10 @@ a, a:active, a:link, a:hover {
 #main-section {
     background: url("../images/content-bg.png");
 }
-#content-wrapper, #picture-wrapper {
+#content-wrapper {
     background: url("../images/content-shadow-bg.png") repeat-x top left;
+}
+#content-wrapper {
     padding-top: 70px;
     padding-bottom: 38px;
 }
@@ -128,14 +130,18 @@ a, a:active, a:link, a:hover {
     font-size: 3rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+#picture-wrapper {
+    padding-top: 72px;
+    padding-bottom: 59px;
+}
 #picture-wrapper .container {
     width: 82.2%;
     margin: 0 auto;
 }
 #picture-wrapper .img-container {
     background: #ffffff;
-    height: 94px;
-    margin: 12px 18px 42px 0;
+    height: 104px;
+    margin: 26px 18px 20px 0;
     border: 1px solid #8b949d;
     padding: 3px;
 }
@@ -148,7 +154,7 @@ a, a:active, a:link, a:hover {
 
 #main-footer {
     background: url("../images/top-wrapper-bg.jpg");
-    padding: 20px 0 0 0;
+    padding: 48px 0 0 0;
 }
 #footer-section {
     width: 68.5%;
