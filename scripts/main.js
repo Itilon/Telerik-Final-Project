@@ -1,6 +1,9 @@
 import $ from 'jquery';
 import Bootstrap from 'bootstrap';
+import Handlebars from 'handlebars';
 import Sammy from 'sammy';
+
+import { getTemplate as getAboutTemplate } from 'aboutController';
 
 const sammyApp = Sammy(function() {
     this.get('/', function() {
@@ -13,15 +16,13 @@ const sammyApp = Sammy(function() {
 
     this.get('#/portfolio', function() {
         console.log('Portfolio Works');
-    })
+    });
 
     this.get('#/blog', function() {
         console.log('Blog Works');
-    })
+    });
 
-    this.get('#/about', function() {
-        console.log('About Works');
-    })
+    this.get('#/about', getAboutTemplate);
 
     $(() => {
         sammyApp.run('/');
