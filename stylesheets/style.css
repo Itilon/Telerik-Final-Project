@@ -89,21 +89,46 @@ a, a:active, a:link, a:hover {
     height: 335px;
     width: 500px;
     background-size: cover;
+    filter: grayscale(0%);
 }
-#featured-image .featured-zoom, #featured-image .featured-more {
+#featured-image:hover {
+    filter: grayscale(20%);
+}
+#featured-image .featured-zoom, #featured-image .featured-more, #featured-image .featured-left-arrow, #featured-image .featured-right-arrow {
     display: block;
     position: absolute;
     height: 43px;
     width: 40px;
     top: 150px;
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+        -webkit-transition: opacity .6s ease-in-out;
+        -moz-transition: opacity .6s ease-in-out;
+        -ms-transition: opacity .6s ease-in-out;
+        -o-transition: opacity .6s ease-in-out;
+}
+#featured-image:hover .featured-zoom, #featured-image:hover .featured-more, #featured-image:hover .featured-left-arrow, #featured-image:hover .featured-right-arrow {
+    opacity: 1;
+}
+#featured-image:hover .featured-left-arrow, #featured-image:hover .featured-right-arrow {
+    cursor: pointer;
 }
 #featured-image .featured-zoom {
-    background: url("../images/featured-zoom.png");
+    background: url("../images/featured-zoom.png") no-repeat;
     left: 211px;
 }
 #featured-image .featured-more {
-    background: url("../images/featured-more.png");
+    background: url("../images/featured-more.png") no-repeat;
     left: 263px;
+}
+
+#featured-image .featured-left-arrow {
+    background: url("../images/featured-left-arrow.png") no-repeat;
+    left: 29px;
+}
+#featured-image .featured-right-arrow {
+    background: url("../images/featured-right-arrow.png") no-repeat;
+    right: 29px;
 }
 #featured-image-title {
     position: absolute;
