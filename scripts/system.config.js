@@ -9,6 +9,8 @@ System.config({
    'main': './scripts/main.js',
    'template': './scripts/template.js',
    'aboutController': './scripts/controllers/about-controller.js',
+   'rightSlider': './scripts/helpers/rightSlider.js',
+   'leftSlider': './scripts/helpers/leftSlider.js',
 
    // Library Files:
    'jquery': '../node_modules/jquery/dist/jquery.min.js',

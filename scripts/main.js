@@ -4,6 +4,8 @@ import Handlebars from 'handlebars';
 import Sammy from 'sammy';
 
 import { getTemplate as getAboutTemplate } from 'aboutController';
+import { rightSlider } from 'rightSlider';
+import { leftSlider } from 'leftSlider';
 
 const sammyApp = Sammy(function() {
     this.get('/', function() {
