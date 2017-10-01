@@ -105,6 +105,20 @@ a, a:active, a:link, a:hover {
     background: url("../images/featured-more.png");
     left: 263px;
 }
+#featured-image-title {
+    position: absolute;
+    top: 280px;
+    height: 55px;
+    width: 100%;
+    background-color: rgba(131, 131, 131, 0.2);
+    padding: 0 12px;
+}
+#featured-image-title h2 {
+    margin-top: 12px;
+    color: #ffffff;
+    font-family: 'Open Sans Condensed';
+    font-size: 1.8em;
+}
 
 /* Main Section */
 
