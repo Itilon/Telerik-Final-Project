@@ -1,0 +1,23 @@
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@font-face {
+    font-family: Elvish;
+    src: url("../fonts/elvish ring/elvish ring nfi.ttf");
+}
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url("../fonts/open sans condensed/OpenSans-CondLight.ttf");
+}
+html, body, header, nav, dir, ul, li {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+}
+
+a, a:active, a:link, a:hover {
+    text-decoration: none;
+}

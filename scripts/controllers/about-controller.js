@@ -1,10 +1,10 @@
 import { template } from 'template';
 
-const $logo = $('#logo');
+const $main = $('#main-section');
 
 export function getTemplate() {
     Promise.resolve(template.getTemplate('about'))
         .then((template) => {
-            $logo.html(template);
+            $main.html(template);
         });
 };
