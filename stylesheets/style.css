@@ -314,7 +314,7 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 
-/* About */
+/* About, Portfolio */
 
 #heading, #about-page-container {
     width: 68.5%;
@@ -329,6 +329,9 @@
 #heading a:hover {
     color: #000000;
 }
+
+/* About */
+
 #about-page-container .col-sm-8 {
     padding-left: 0;
 }

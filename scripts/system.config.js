@@ -8,7 +8,14 @@ System.config({
    // App Files:
    'main': './scripts/main.js',
    'template': './scripts/template.js',
+
+   // Controllers:
    'aboutController': './scripts/controllers/about-controller.js',
+   'categoryController': './scripts/controllers/category-controller.js',
+   'portfolioController': './scripts/controllers/portfolio-controller.js',
+
+   // Helpers:
+
    'rightSlider': './scripts/helpers/rightSlider.js',
    'leftSlider': './scripts/helpers/leftSlider.js',
 

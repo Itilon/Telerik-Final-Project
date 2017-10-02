@@ -4,6 +4,8 @@ import Handlebars from 'handlebars';
 import Sammy from 'sammy';
 
 import { getTemplate as getAboutTemplate } from 'aboutController';
+import { getTemplate as getCategoryTemplate } from 'categoryController'; 
+import { getTemplate as getPortolioTemplate } from 'portfolioController';
 import { rightSlider } from 'rightSlider';
 import { leftSlider } from 'leftSlider';
 
@@ -16,15 +18,13 @@ const sammyApp = Sammy(function() {
         console.log('Home Works');
     });
 
-    this.get('#/portfolio', function() {
-        console.log('Portfolio Works');
-    });
+    this.get('#/about', getAboutTemplate);
+
+    this.get('#/portfolio', getPortolioTemplate);
 
     this.get('#/blog', function() {
-        console.log('Blog Works');
+        getCategoryTemplate('Handlebars Works');
     });
-
-    this.get('#/about', getAboutTemplate);
 
     $(() => {
         sammyApp.run('/');
