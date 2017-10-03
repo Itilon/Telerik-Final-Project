@@ -6,6 +6,7 @@ import Sammy from 'sammy';
 import { getTemplate as getAboutTemplate } from 'aboutController';
 import { getTemplate as getCategoryTemplate } from 'categoryController'; 
 import { getTemplate as getPortolioTemplate } from 'portfolioController';
+
 import { rightSlider } from 'rightSlider';
 import { leftSlider } from 'leftSlider';
 
