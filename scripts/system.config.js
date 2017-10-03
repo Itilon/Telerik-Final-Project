@@ -6,6 +6,7 @@ System.config({
    'systemjs-babel-build': '../node_modules/systemjs-plugin-babel/systemjs-babel-browser.js',
 
    // App Files:
+   'data': './scripts/data.js',
    'main': './scripts/main.js',
    'template': './scripts/template.js',
 
