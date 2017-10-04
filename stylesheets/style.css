@@ -192,12 +192,11 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 #picture-wrapper {
-    padding-top: 72px;
     padding-bottom: 59px;
 }
 #picture-wrapper .container {
-    width: 82.2%;
-    margin: 0 auto;
+    width: 85.2%;
+    margin: 72px auto 0 auto;
 }
 #picture-wrapper .img-container {
     background: #ffffff;
@@ -372,4 +371,10 @@
     color: #5e5e5e;
     font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
     font-size: 1.3rem;
+}
+
+/* Portfolio */
+
+#picture-wrapper #portfolio-container {
+    margin-top: 0;
 }
