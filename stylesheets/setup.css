@@ -7,7 +7,7 @@
     font-family: 'Open Sans Condensed';
     src: url("../fonts/open sans condensed/OpenSans-CondLight.ttf");
 }
-html, body, header, nav, dir, ul, li {
+html, body, div, header, nav, aside, ul, li {
     margin: 0;
     padding: 0;
 }

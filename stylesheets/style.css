@@ -257,7 +257,7 @@
     background: url("../images/top-wrapper-bg.jpg");
     padding: 48px 0 0 0;
 }
-#footer-section {
+#footer-section, #secondary-footer .container {
     width: 68.5%;
     margin: 0 auto;
 }
@@ -277,10 +277,6 @@
     margin-top: 48px;
     padding-top: 24px;
     padding-bottom: 24px;
-}
-#secondary-footer .container {
-    width: 68.5%;
-    margin: 0 auto;
 }
 #footer-navigation li {
     display: inline-block;
