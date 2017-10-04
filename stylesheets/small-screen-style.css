@@ -1,6 +1,42 @@
-/* Footer on Smaller Screens */
+/* On Smaller Screens */
+
+@media (max-width: 1268px) {
+    #picture-wrapper .img-container {
+        margin-right: 12px;
+    }
+    #picture-wrapper .more {
+        left: 24px;
+    }
+    #picture-wrapper .zoom {
+        left: 65px;
+    }
+}
+
+@media (max-width: 1184px) {
+    #picture-wrapper .more {
+        left: 19px;
+    }
+    #picture-wrapper .zoom {
+        left: 60px;
+    }
+}
+
+@media (max-width: 1108px) {
+    #picture-wrapper .img-container {
+        margin-right: 6px;
+    }
+    #picture-wrapper .more {
+        left: 15px;
+    }
+    #picture-wrapper .zoom {
+        left: 56px;
+    }
+}
 
 @media (max-width: 968px) {
+    #picture-wrapper .img-container {
+        margin-right: 0;
+    }
     #footer-section, #secondary-footer .container {
         width: 78.5%;
     }
