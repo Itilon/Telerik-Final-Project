@@ -13,6 +13,7 @@ System.config({
    // Controllers:
    'aboutController': './scripts/controllers/about-controller.js',
    'categoryController': './scripts/controllers/category-controller.js',
+   'homeController': './scripts/controllers/home-controller.js',
    'portfolioController': './scripts/controllers/portfolio-controller.js',
 
    // Helpers:

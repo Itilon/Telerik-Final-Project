@@ -5,7 +5,7 @@ class Data {
         return aboutContent;
     }
     getPortfolio() {
-        return portfolio
+        return portfolio;
     }
 }
 

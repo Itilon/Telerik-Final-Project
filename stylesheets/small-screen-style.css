@@ -88,6 +88,13 @@
 }
 
 @media (max-width: 768px) {
+
+    #picture-wrapper .container {
+        width: 92.6%;
+    }
+    #picture-wrapper .img-container {
+        height: 312px;
+    }
     #footer-navigation ul {
         margin-bottom: 12px;
         text-align: center;

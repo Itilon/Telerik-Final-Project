@@ -4,8 +4,9 @@ import Handlebars from 'handlebars';
 import Sammy from 'sammy';
 
 import { getTemplate as getAboutTemplate } from 'aboutController';
-import { getTemplate as getCategoryTemplate } from 'categoryController'; 
-import { getTemplate as getPortolioTemplate } from 'portfolioController';
+import { getTemplate as getCategoryTemplate } from 'categoryController';
+import { getTemplate as getHomeTemplate } from 'homeController'; 
+import { getTemplate as getPortfolioTemplate } from 'portfolioController';
 
 import { rightSlider } from 'rightSlider';
 import { leftSlider } from 'leftSlider';
@@ -15,13 +16,11 @@ const sammyApp = Sammy(function() {
         this.redirect('#/home');
     });
 
-    this.get('#/home', function() {
-        console.log('Home Works');
-    });
+    this.get('#/home', getHomeTemplate);
 
     this.get('#/about', getAboutTemplate);
 
-    this.get('#/portfolio', getPortolioTemplate);
+    this.get('#/portfolio', getPortfolioTemplate);
 
     this.get('#/blog', function() {
         getCategoryTemplate('Handlebars Works');
