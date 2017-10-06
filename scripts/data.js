@@ -4,8 +4,20 @@ class Data {
     getContent() {
         return aboutContent;
     }
+
     getPortfolio() {
         return portfolio;
+    }
+
+    getQuote() {
+        const quoteNumber = Math.floor(Math.random() * quoteList.length);
+        const quote = quoteList[quoteNumber];
+        return quote;
+    }
+
+    getFirstParagraph() {
+        const firstParagraph = aboutContent.content[0];
+        return firstParagraph;
     }
 }
 
@@ -17,10 +29,10 @@ const aboutContent = {
     author: 'admin',
     date: 'October 1, 2016',
     numberOfComments: 10,
-    content: ['Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ex cumque laborum voluptates fugit nisi aut, dicta aliquam consequatur in, natus expedita cum inventore corporis accusantium distinctio! Veniam, deserunt, reprehenderit.',
-    'Tenetur non enim, delectus doloremque repudiandae, dolorum eligendi explicabo cupiditate nemo mollitia. Eum inventore tempore explicabo tempora, earum voluptatum obcaecati provident nihil illo? Totam, quidem quos in vero, id enim?',
-    'Non molestiae nulla eius beatae ratione dolorem doloremque, magnam sapiente dolore quis harum qui, fugit aliquam minus corrupti quod itaque accusamus velit. Repudiandae autem ex esse eos placeat sunt molestiae.']
-}
+    content: ['We believe sport is a powerful tool to create social change, to generate economic impact for communities, and to influence consumers. This philosophy advocates using sport not just as a physical activity but also as a means of educating people.',
+    'Our creed, or guiding principle, is a quote by Baron de Coubertin: "The most important thing in the Olympic Games is not to win but to take part, just as the most important thing in life is not the triumph but the struggle. The essential thing is not to have conquered but to have fought well."',
+    'According to our philosophy, the good sportsmanship, sense of fair play, and respect for fellow athletes that is developed through participation in sports teaches men and women of different races, religions, and nationalities to work peacefully together in competition toward common goals. We work to expand such lessons beyond the sports arena in the hope of promoting peace and a sense of brotherhood throughout the world.']
+};
 
 const portfolio = [
     { 
@@ -63,4 +75,15 @@ const portfolio = [
         url: 'https://i.ytimg.com/vi/KNe2SZ1guL8/maxresdefault.jpg',
         isLeading: false
     }
-]
+];
+
+const quoteList = [
+    'The easiest way to make an impact in your community is just to be kind.',
+    'Kindness isn\'t about the thanks you get. It\'s about the act itself.',
+    'When there is teamwork and collaboration, wonderful things can be achieved.',
+    'Talent wins games, but teamwork wins championships.',
+    'Problems can become opportunities when the right people come together.',
+    'The greater the obstacle, the more glory in overcoming it.',
+    'We need to remember that circumstances don’t make a person, they reveal a person.',
+    'Believe in your infinite potential. Your only limitations are those you set upon yourself.'
+];
