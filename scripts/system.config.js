@@ -14,6 +14,7 @@ System.config({
    'aboutController': './scripts/controllers/about-controller.js',
    'categoryController': './scripts/controllers/category-controller.js',
    'homeController': './scripts/controllers/home-controller.js',
+   'pictureController': './scripts/controllers/picture-controller.js',
    'portfolioController': './scripts/controllers/portfolio-controller.js',
 
    // Helpers:
