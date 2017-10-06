@@ -2,7 +2,8 @@
 
 #main-header {
     background: url("../images/top-wrapper-bg.jpg");
-    padding: 20px 0;
+    background-size: cover;
+    padding: 20px 0 74px 0;
 }
 #logo {
     width: 68.5%;
@@ -178,6 +179,7 @@
 #quote-wrapper {
     background: url("../images/quote-inner-bg.png") repeat-x;
     height: 160px;
+    border-bottom: 1px solid #d8d8d8;
     overflow: hidden;
 }
 #quote-wrapper .container {
@@ -273,6 +275,7 @@
 }
 #secondary-footer {
     background: url("../images/footer-bottom-bg.png") repeat-x;
+    background-size: cover;
     margin-top: 48px;
     padding-top: 24px;
     padding-bottom: 24px;

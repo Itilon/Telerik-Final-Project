@@ -87,8 +87,10 @@
     }
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 767px) {
+    #quote-text {
+        font-size: 2.4rem;
+    }
     #picture-wrapper .container {
         width: 92.6%;
     }
