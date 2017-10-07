@@ -7,7 +7,7 @@ const $titularSection = $('#titular-section');
 export function getTemplate() {
     Promise.all([template.getTemplate('about'),
         template.getTemplate('title'),
-        data.getContent()])
+        data.getAboutContent()])
         .then(([aboutTemplate, titleTemplate, data]) => {
             $main.html(aboutTemplate(data));
             $titularSection.html(titleTemplate('About Us'))

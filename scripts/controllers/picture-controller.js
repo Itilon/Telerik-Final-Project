@@ -7,7 +7,7 @@ const $titularSection = $('#titular-section');
 export function getTemplate(id) {
     Promise.all([template.getTemplate('picture'),
         template.getTemplate('title'),
-        data.getPicture(id),
+        data.getImage(id),
         data.getFirstParagraph()])
         .then(([pictureTemplate, titleTemplate, data, firstParagraph]) => {
             $main.html(pictureTemplate([data, firstParagraph]));
