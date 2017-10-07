@@ -10,7 +10,12 @@
     #picture-wrapper .zoom {
         left: 65px;
     }
-    #about-page-container h4, #about-page-container .widget, #picture-page-container h4, #picture-page-container .widget {
+    #about-page-container h4, 
+    #about-page-container .widget,
+    #article-page-container h4,
+    #article-page-container .widget,
+    #picture-page-container h4, 
+    #picture-page-container .widget {
         margin-left: 42px;
     }
 }
@@ -22,10 +27,17 @@
     #picture-wrapper .zoom {
         left: 60px;
     }
-    #about-page-container h4, #about-page-container .widget, #picture-page-container h4, #picture-page-container .widget {
+    #about-page-container h4,
+    #about-page-container .widget,
+    #article-page-container h4,
+    #article-page-container .widget,
+    #picture-page-container h4,
+    #picture-page-container .widget {
         margin-left: 32px;
     }
-    #about-page-container .widget p, #picture-page-container .widget p {
+    #about-page-container .widget p, 
+    #article-page-container .widget p,
+    #picture-page-container .widget p {
         font-size: 1.2rem;
     }
 }
@@ -40,7 +52,12 @@
     #picture-wrapper .zoom {
         left: 56px;
     }
-    #about-page-container h4, #about-page-container .widget, #picture-page-container h4, #picture-page-container .widget {
+    #about-page-container h4,
+    #about-page-container .widget,
+    #article-page-container h4,
+    #article-page-container .widget,
+    #picture-page-container h4,
+    #picture-page-container .widget {
         margin-left: 22px;
     }
 }
@@ -48,10 +65,12 @@
 @media (max-width: 992px) {
     #logo,
     #main-navigation,
+    #titular-section .container,
     #up-section,
     #quote-wrapper .container,
     #heading,
     #about-page-container,
+    #article-page-container,
     #picture-page-container,
     #footer-section, 
     #secondary-footer .container {
@@ -78,10 +97,17 @@
     #picture-wrapper .zoom {
         left: 76px;
     }
-    #about-page-container h4, #about-page-container .widget, #picture-page-container h4, #picture-page-container .widget {
+    #about-page-container h4, 
+    #about-page-container .widget, 
+    #article-page-container h4,
+    #article-page-container .widget,
+    #picture-page-container h4, 
+    #picture-page-container .widget {
         margin-left: 12px;
     }
-    #about-page-container .widget p, #picture-page-container .widget p {
+    #about-page-container .widget p,
+    #article-page-container .widget p,
+    #picture-page-container .widget p {
         font-size: 1.1rem;
     }
 }
@@ -89,10 +115,12 @@
 @media (max-width: 848px) {
     #logo,
     #main-navigation,
+    #titular-section .container,
     #up-section,
     #quote-wrapper .container,
     #heading,
     #about-page-container,
+    #article-page-container,
     #picture-page-container,
     #footer-section, 
     #secondary-footer .container {
@@ -146,13 +174,22 @@
     #copyright {
         text-align: center;
     }
-    #about-page-container .col-sm-4, #picture-page-container .col-sm-4 {
+    #about-page-container .col-sm-4,
+    #article-page-container .col-sm-4,
+    #picture-page-container .col-sm-4 {
         padding-left: 0;
     }
-    #about-page-container h4, #about-page-container .widget, #picture-page-container h4, #picture-page-container .widget {
+    #about-page-container h4, 
+    #about-page-container .widget, 
+    #article-page-container h4,
+    #article-page-container .widget,
+    #picture-page-container h4, 
+    #picture-page-container .widget {
         margin-left: 0;
     }
-    #about-page-container .widget p, #picture-page-container .widget p {
+    #about-page-container .widget p,
+    #article-page-container .widget p,
+    #picture-page-container .widget p {
         font-size: 1.3rem;
     }
 }

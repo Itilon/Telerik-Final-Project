@@ -1,6 +1,20 @@
 import $ from 'jquery';
 
 class Data {
+
+    getArticle(id) {
+        id = Number(id);
+        const articleArr = $.grep(articleList, function(text) 
+            { 
+                return text.id === id;
+            } 
+        );
+
+        const article = articleArr[0];
+
+        return article;
+    }
+
     getContent() {
         return aboutContent;
     }
@@ -47,6 +61,24 @@ const aboutContent = {
     'Our creed, or guiding principle, is a quote by Baron de Coubertin: "The most important thing in the Olympic Games is not to win but to take part, just as the most important thing in life is not the triumph but the struggle. The essential thing is not to have conquered but to have fought well."',
     'According to our philosophy, the good sportsmanship, sense of fair play, and respect for fellow athletes that is developed through participation in sports teaches men and women of different races, religions, and nationalities to work peacefully together in competition toward common goals. We work to expand such lessons beyond the sports arena in the hope of promoting peace and a sense of brotherhood throughout the world.']
 };
+
+const articleList = [
+    {
+        id: 0,
+        title: 'Yankees Take Control Early, Then Suffer a Crushing Defeat',
+        author: 'Billy Witz',
+        date: 'October 16, 2016',
+        category: 'Sport',
+        numberOfComments: 5,
+        content: [
+            'After Gary Sanchez and Aaron Hicks slugged home runs on Friday night off the Cleveland Indians ace Corey Kluber and helped send him to an early exit and then a five-run Yankees lead was turned over to their indomitable bullpen, they seemed destined to return to New York with their American League division series tied at a game apiece.',
+            'But the Yankees, as young and talented as they may be, learned something about the Indians’ unwavering resolve.',
+            'Francisco Lindor’s two-out, sixth-inning grand slam off Chad Green got the Indians back in the game. Jay Bruce’s solo shot off David Robertson in the eighth got them even, and Yan Gomes’s ground-ball double just inside the third-base line in the 13th lifted the Indians to a stunning 9-8 victory.',
+            'As a result, the Yankees will return home for Game 3 on Sunday facing elimination by a team that has lost just four times in its last 39 games.',
+            'It was a crushing defeat for the Yankees, who not only saw their big lead evaporate, but also failed to convert several late opportunities — including when they had pinch-runner Ronald Torreyes picked off second in extra innings with no one out. The Yankees also neglected to challenge a hit-by-pitch call, a move that might have prevented Lindor from coming to the plate and hitting his grand slam.'
+        ]
+    }
+];
 
 const portfolio = [
     { 

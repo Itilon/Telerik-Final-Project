@@ -1,0 +1,35 @@
+<section id="content-wrapper">
+    <div id="heading">
+        <h5>
+            <a href="#/home">Home</a>
+            <span class="raquo">»</span>
+            {{this.[0].title}}
+        </h5>
+    </div>
+    <div id="article-page-container" class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <p class="meta">Posted by {{this.[0].author}} on {{this.[0].date}} in {{this.[0].category}} | {{this.[0].numberOfComments}} Comments</p>
+                {{#each this.[0].content}}
+                <p>{{this}}</p>
+                {{/each}}
+                <h3 class="comment-title">{{this.[0].numberOfComments}} Comments</h3>
+                <h3 class="comment-title">Leave a Comment</h3>
+            </div>
+            <div class="col-sm-4">
+                <h4>Recent Posts</h4>
+                <aside class="widget">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ex cumque laborum voluptates fugit nisi aut, dicta aliquam consequatur in, natus expedita cum inventore corporis accusantium distinctio! Veniam, deserunt, reprehenderit.</p>
+                </aside>
+                <h4>Recent Comments</h4>
+                <aside class="widget">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ex cumque laborum voluptates fugit nisi aut, dicta aliquam consequatur in, natus expedita cum inventore corporis accusantium distinctio! Veniam, deserunt, reprehenderit.</p>
+                </aside>
+                <h4>About Us</h4>
+                <aside class="widget">
+                    <p>{{this.[1]}}</p>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>

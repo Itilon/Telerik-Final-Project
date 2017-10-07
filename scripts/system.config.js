@@ -12,6 +12,7 @@ System.config({
 
    // Controllers:
    'aboutController': './scripts/controllers/about-controller.js',
+   'articleController': './scripts/controllers/article-controller.js',
    'categoryController': './scripts/controllers/category-controller.js',
    'homeController': './scripts/controllers/home-controller.js',
    'pictureController': './scripts/controllers/picture-controller.js',
