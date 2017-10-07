@@ -7,7 +7,9 @@ System.config({
 
    // App Files:
    'data': './scripts/data.js',
+   'firebase': './scripts/firebase.config.js',
    'main': './scripts/main.js',
+   'requester': './scripts/requester.js',
    'template': './scripts/template.js',
 
    // Controllers:

@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import { requester } from 'requester';
 
 class Data {
 
@@ -16,7 +17,8 @@ class Data {
     }
 
     getContent() {
-        return aboutContent;
+        const $url = ' https://sport-vision-a49b7.firebaseio.com/aboutContent.json';
+        return $.get($url);
     }
 
     getFirstParagraph() {
@@ -61,15 +63,6 @@ class Data {
 let data = new Data();
 
 export { data };
-
-const aboutContent = {
-    author: 'admin',
-    date: 'October 1, 2016',
-    numberOfComments: 10,
-    content: ['We believe sport is a powerful tool to create social change, to generate economic impact for communities, and to influence consumers. This philosophy advocates using sport not just as a physical activity but also as a means of educating people.',
-    'Our creed, or guiding principle, is a quote by Baron de Coubertin: "The most important thing in the Olympic Games is not to win but to take part, just as the most important thing in life is not the triumph but the struggle. The essential thing is not to have conquered but to have fought well."',
-    'According to our philosophy, the good sportsmanship, sense of fair play, and respect for fellow athletes that is developed through participation in sports teaches men and women of different races, religions, and nationalities to work peacefully together in competition toward common goals. We work to expand such lessons beyond the sports arena in the hope of promoting peace and a sense of brotherhood throughout the world.']
-};
 
 const articleList = [
     {

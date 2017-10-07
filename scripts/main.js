@@ -3,6 +3,8 @@ import Bootstrap from 'bootstrap';
 import Handlebars from 'handlebars';
 import Sammy from 'sammy';
 
+import { firebase } from 'firebase';
+
 import { getTemplate as getAboutTemplate } from 'aboutController';
 import { getTemplate as getArticleTemplate } from 'articleController';
 import { getTemplate as getCategoryTemplate } from 'categoryController';
