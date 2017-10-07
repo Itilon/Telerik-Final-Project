@@ -3,7 +3,7 @@ import { data } from 'data';
 
 const $main = $('#main-section');
 const $titularSection = $('#titular-section');
-const $footer = $('#main-footer');
+const $footer = $('#footer-section');
 
 export function getTemplate() {
     Promise.all([template.getTemplate('home'),
