@@ -1,5 +1,7 @@
 import { template } from 'template';
 import { data } from 'data';
+import { leftSlider } from 'leftSlider';
+import { rightSlider } from 'rightSlider';
 
 const $main = $('#main-section');
 const $titularSection = $('#titular-section');
@@ -10,11 +12,14 @@ export function getTemplate() {
         template.getTemplate('slider'),
         template.getTemplate('footer'),
         data.getPortfolio(),
+        data.getLatestImages(),
         data.getQuote(),
         data.getFirstParagraph()])
-            .then(([mainTemplate, sliderTemplate, footerTemplate, portfolio, quote, firstParagraph]) => {
+            .then(([mainTemplate, sliderTemplate, footerTemplate, portfolio, latestImages, quote, firstParagraph]) => {
                 $main.html(mainTemplate([portfolio, quote, firstParagraph]));
-                $titularSection.html(sliderTemplate());
+                $titularSection.html(sliderTemplate(latestImages));
                 $footer.html(footerTemplate(firstParagraph));
-            });
+            })
+            .then(leftSlider)
+            .then(rightSlider);
 };

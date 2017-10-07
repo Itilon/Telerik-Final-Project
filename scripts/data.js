@@ -24,6 +24,15 @@ class Data {
         return firstParagraph;
     }
 
+    getLatestImages() {
+        const latestImages = [];
+        for(let i = 0; i < 5; i += 1) {
+            latestImages.push(portfolio[i]);
+        }
+
+        return latestImages;
+    }
+
     getPicture(id) {
         id = Number(id);
         const pictureArr = $.grep(portfolio, function(pic) 

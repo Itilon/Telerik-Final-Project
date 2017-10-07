@@ -10,9 +10,6 @@ import { getTemplate as getHomeTemplate } from 'homeController';
 import { getTemplate as getPictureTemplate } from 'pictureController';
 import { getTemplate as getPortfolioTemplate } from 'portfolioController';
 
-import { rightSlider } from 'rightSlider';
-import { leftSlider } from 'leftSlider';
-
 const sammyApp = Sammy(function() {
     this.get('/', function() {
         this.redirect('#/home');

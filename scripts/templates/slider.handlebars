@@ -1,19 +1,19 @@
 <div id="img-slider" class="container-fluid">
     <div class="row">
         <div class="col-sm-3 slider-img-container">
-            <div class="slider-img" style="background-image: url('./images/test-image.jpg')"></div>
+            <div class="slider-img" style="background-image: url('{{this.[1].url}}')"></div>
         </div>
         <div class="col-sm-3 slider-img-container">
-            <div class="slider-img" style="background-image: url('./images/image.jpg')"></div>
+            <div class="slider-img" style="background-image: url('{{this.[2].url}}')"></div>
         </div>
         <div class="col-sm-3 slider-img-container">
-            <div class="slider-img" style="background-image: url('./images/test-image.jpg')"></div>
+            <div class="slider-img" style="background-image: url('{{this.[3].url}}')"></div>
         </div>
         <div class="col-sm-3 slider-img-container">
-            <div class="slider-img" style="background-image: url('./images/image.jpg')"></div>
+            <div class="slider-img" style="background-image: url('{{this.[4].url}}')"></div>
         </div>
     </div>
-    <div id="featured-image" style="background-image: url('./images/fitness-image.jpg')">
+    <div id="featured-image" style="background-image: url('{{this.[0].url}}')">
         <i class="featured-left-arrow"></i>
         <a href="#">
             <i class="featured-zoom"></i>
@@ -23,7 +23,7 @@
         </a>
         <i class="featured-right-arrow"></i>
         <div id="featured-image-title">
-            <h2>Made Up Title</h2>
+            <h2>{{this.[0].title}}</h2>
         </div>
     </div>
 </div>
