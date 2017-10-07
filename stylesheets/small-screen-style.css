@@ -10,6 +10,9 @@
     #picture-wrapper .zoom {
         left: 65px;
     }
+    #about-page-container h4, #about-page-container .widget, #picture-page-container h4, #picture-page-container .widget {
+        margin-left: 42px;
+    }
 }
 
 @media (max-width: 1184px) {
@@ -18,6 +21,12 @@
     }
     #picture-wrapper .zoom {
         left: 60px;
+    }
+    #about-page-container h4, #about-page-container .widget, #picture-page-container h4, #picture-page-container .widget {
+        margin-left: 32px;
+    }
+    #about-page-container .widget p, #picture-page-container .widget p {
+        font-size: 1.2rem;
     }
 }
 
@@ -31,6 +40,9 @@
     #picture-wrapper .zoom {
         left: 56px;
     }
+    #about-page-container h4, #about-page-container .widget, #picture-page-container h4, #picture-page-container .widget {
+        margin-left: 22px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -38,7 +50,9 @@
     #main-navigation,
     #up-section,
     #quote-wrapper .container,
-    #heading, 
+    #heading,
+    #about-page-container,
+    #picture-page-container,
     #footer-section, 
     #secondary-footer .container {
         width: 78.5%;
@@ -64,6 +78,12 @@
     #picture-wrapper .zoom {
         left: 76px;
     }
+    #about-page-container h4, #about-page-container .widget, #picture-page-container h4, #picture-page-container .widget {
+        margin-left: 12px;
+    }
+    #about-page-container .widget p, #picture-page-container .widget p {
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 848px) {
@@ -72,6 +92,8 @@
     #up-section,
     #quote-wrapper .container,
     #heading,
+    #about-page-container,
+    #picture-page-container,
     #footer-section, 
     #secondary-footer .container {
         width: 88.5%;
@@ -123,5 +145,14 @@
     }
     #copyright {
         text-align: center;
+    }
+    #about-page-container .col-sm-4, #picture-page-container .col-sm-4 {
+        padding-left: 0;
+    }
+    #about-page-container h4, #about-page-container .widget, #picture-page-container h4, #picture-page-container .widget {
+        margin-left: 0;
+    }
+    #about-page-container .widget p, #picture-page-container .widget p {
+        font-size: 1.3rem;
     }
 }
