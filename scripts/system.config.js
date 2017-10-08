@@ -24,6 +24,7 @@ System.config({
 
    'rightSlider': './scripts/helpers/rightSlider.js',
    'leftSlider': './scripts/helpers/leftSlider.js',
+   'popupGallery': './scripts/helpers/popupGallery.js',
 
    // Library Files:
    'jquery': '../node_modules/jquery/dist/jquery.min.js',

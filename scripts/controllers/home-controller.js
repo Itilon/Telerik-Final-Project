@@ -2,6 +2,7 @@ import { template } from 'template';
 import { data } from 'data';
 import { leftSlider } from 'leftSlider';
 import { rightSlider } from 'rightSlider';
+import { popupGallery } from 'popupGallery';
 
 const $main = $('#main-section');
 const $titularSection = $('#titular-section');
@@ -21,5 +22,6 @@ export function getTemplate() {
                 $footer.html(footerTemplate(firstParagraph));
             })
             .then(leftSlider)
-            .then(rightSlider);
+            .then(rightSlider)
+            .then(popupGallery);
 };
