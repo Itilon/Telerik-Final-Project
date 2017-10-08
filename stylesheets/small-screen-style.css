@@ -163,31 +163,37 @@
     #picture-wrapper .img-container {
         height: 312px;
     }
-    #footer-navigation ul {
+    #logo {
+        text-align: center;
+    }
+    #main-navigation {
+        background: inherit;
+    }
+    #main-navigation ul, #footer-navigation ul {
         margin-bottom: 12px;
         text-align: center;
     }
-    #footer-navigation li {
+    #main-navigation li, #footer-navigation li {
         margin-right: 6px;
         border: 1px solid #ffffff;
         padding-top: 4px;
         padding-bottom: 4px;
         transition: box-shadow 0.4s ease-in-out;
     }
-    #footer-navigation li:hover {
+    #main-navigation li:hover, #footer-navigation li:hover {
         background-color: rgba(255, 255, 255, 0.2);
         box-shadow: 2px 2px 2px #ffffff;
     }
-    #footer-navigation li:hover a {
+    #main-navigation li:hover a, #footer-navigation li:hover a {
         color: #8d96a0;
     }
-    #footer-navigation a {
+    #main-navigation a, #footer-navigation a {
         font-size: 1.3rem;
     }
-    #footer-navigation li:first-child {
+    #main-navigation li:first-child, #footer-navigation li:first-child {
         padding-left: 10px;
     }
-    #copyright {
+    #awesome-container, #copyright {
         text-align: center;
     }
 
