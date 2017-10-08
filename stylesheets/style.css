@@ -376,6 +376,47 @@
     font-size: 3rem;
     padding-bottom: 33px;
 }
+#comment-container .comment {
+    margin-bottom: 12px;
+}
+#comment-container .avatar-container,
+#comment-container .comment-content {
+    padding-left: 0;
+}
+
+#comment-container .avatar-box {
+    height: 68px;
+    width: 68px;
+    background-color: #ffffff;
+}
+#comment-container .avatar {
+    height: 56px;
+    width: 56px;
+    margin: 6px 0 0 6px;
+}
+#comment-container .comment-date {
+    display: inline-block;
+    width: 68px;
+    color: #838383;
+    text-align: center;
+    font-size: 1.1rem;
+}
+#comment-container .comment-content {
+    background-color: #ffffff;
+    padding: 25px 15px 25px 30px;
+    border-radius: 10px;
+}
+#comment-container h5 {
+    color: #1f262d;
+    font-family: 'Open Sans Condensed';
+    font-size: 2.4rem;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+#comment-container p {
+    color: #5e5e5e;
+    font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 1.3rem;
+}
 #about-page-container h4, 
 #about-page-container .widget,
 #article-page-container h4,

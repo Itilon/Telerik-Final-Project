@@ -14,6 +14,22 @@
                 <p>{{this}}</p>
                 {{/each}}
                 <h3 class="comment-title">{{numberOfComments}} Comments</h3>
+                <div id="comment-container" class="container-fluid">
+                    {{#each comments}}
+                    <div class="comment row">
+                        <div class="avatar-container col-sm-2">
+                            <div class="avatar-box">
+                                <img class="avatar" src="../../images/avatar.png" alt="Avatar Image">
+                            </div>
+                            <span class="comment-date">{{this.date}}</span>
+                        </div>
+                        <div class="comment-content col-sm-10">
+                            <h5>{{this.author}} says:</h5>
+                            <p>{{this.content}}</p>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
                 <h3 class="comment-title">Leave a Comment</h3>
             </div>
             <div class="col-sm-4">
