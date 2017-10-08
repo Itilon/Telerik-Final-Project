@@ -16,6 +16,7 @@ System.config({
    'articleController': './scripts/controllers/article-controller.js',
    'categoryController': './scripts/controllers/category-controller.js',
    'homeController': './scripts/controllers/home-controller.js',
+   'notFoundController': './scripts/controllers/not-found-controller.js',
    'pictureController': './scripts/controllers/picture-controller.js',
    'portfolioController': './scripts/controllers/portfolio-controller.js',
 

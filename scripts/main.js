@@ -11,8 +11,10 @@ import { getTemplate as getCategoryTemplate } from 'categoryController';
 import { getTemplate as getHomeTemplate } from 'homeController'; 
 import { getTemplate as getPictureTemplate } from 'pictureController';
 import { getTemplate as getPortfolioTemplate } from 'portfolioController';
+import { getTemplate as get404Template } from 'notFoundController';
 
 const sammyApp = Sammy(function() {
+
     this.get('/', function() {
         this.redirect('#/home');
     });
@@ -33,7 +35,9 @@ const sammyApp = Sammy(function() {
 
     this.get('#/article/:id', function() {
         getArticleTemplate(this.params['id']);
-    })
+    });
+
+    this.notFound = get404Template;
 
     $(() => {
         sammyApp.run('/');

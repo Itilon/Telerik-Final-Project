@@ -18,7 +18,6 @@ class Data {
             });
     };
 
-
     getFirstParagraph() {
         const ref = firebase.database().ref('aboutContent');
         const firstParagraph = ref.child('content').child(0);
