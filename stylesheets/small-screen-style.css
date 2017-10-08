@@ -163,7 +163,10 @@
     #picture-wrapper .img-container {
         height: 312px;
     }
-    #logo {
+
+    /* Navigation: */
+
+    #logo, #titular-section h1 {
         text-align: center;
     }
     #main-navigation {
