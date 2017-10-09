@@ -1,9 +1,10 @@
+/* eslint-disable no-undef */
 import { template } from 'template';
 import { data } from 'data';
 
 const $main = $('#main-section');
 const $titularSection = $('#titular-section');
-const $footer = $('#footer-section')
+const $footer = $('#footer-section');
 
 export function getTemplate() {
     Promise.all([template.getTemplate('portfolio'),
@@ -12,9 +13,17 @@ export function getTemplate() {
         data.getPortfolio(),
         data.getFirstParagraph(),
         data.getLatestArticleTitles()])
-        .then(([mainTemplate, titleTemplate, footerTemplate, data, firstParagraph, latestTitles]) => {
-            $main.html(mainTemplate(data));
+        .then((
+            [
+                mainTemplate,
+                titleTemplate,
+                footerTemplate,
+                portfolio,
+                firstParagraph,
+                latestTitles,
+            ]) => {
+            $main.html(mainTemplate(portfolio));
             $titularSection.html(titleTemplate('Portfolio'));
             $footer.html(footerTemplate([firstParagraph, latestTitles]));
         });
-};
+}

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { template } from 'template';
 import { data } from 'data';
 
@@ -11,9 +12,16 @@ export function getTemplate() {
         template.getTemplate('footer'),
         data.getFirstParagraph(),
         data.getLatestArticleTitles()])
-        .then(([template, titleTemplate, footerTemplate, firstParagraph, latestTitles]) => {
-            $main.html(template);
+        .then((
+            [
+                template404,
+                titleTemplate,
+                footerTemplate,
+                firstParagraph,
+                latestTitles,
+            ]) => {
+            $main.html(template404);
             $titularSection.html(titleTemplate('404! Not Found!'));
             $footer.html(footerTemplate([firstParagraph, latestTitles]));
-        })
-};
+        });
+}

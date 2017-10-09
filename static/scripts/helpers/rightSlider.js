@@ -1,12 +1,13 @@
+/* eslint-disable no-undef */
 const rightSlider = function() {
     const rightArrow = $('.featured-right-arrow');
     const sliderImages = $('.slider-img');
 
-    let featuredImage = $('#featured-image');
+    const featuredImage = $('#featured-image');
     let currentBackground = featuredImage.css('background-image');
-    let previousImage = $(sliderImages[2]);
+    const previousImage = $(sliderImages[2]);
     let previousBackground = previousImage.css('background-image');
-    
+
     rightArrow.click(() => {
         featuredImage.css('background-image', previousBackground);
         previousBackground = currentBackground;

@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import Handlebars from 'handlebars';
 import handlebars from 'handlebars';
 
 class HandleBarsTemplate {
@@ -13,9 +12,9 @@ class HandleBarsTemplate {
         return new Promise((resolve, reject) => {
             if (cache[name]) {
                 resolve(cache[name]);
-            }
-            else {
-                $.get(`static/scripts/templates/${name}.handlebars`, (templateHtml) => {
+            } else {
+                $.get(`static/scripts/templates/${name}.handlebars`,
+                (templateHtml) => {
                     const template = handlebars.compile(templateHtml);
                     cache[name] = template;
                     resolve(template);
@@ -26,6 +25,6 @@ class HandleBarsTemplate {
     }
 }
 
-let template = new HandleBarsTemplate();
+const template = new HandleBarsTemplate();
 
 export { template };

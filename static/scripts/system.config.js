@@ -3,6 +3,7 @@ System.config({
   map: {
     // System.js Files:
    'plugin-babel': '/libs/systemjs-plugin-babel/plugin-babel.js',
+   /* eslint-disable max-len */
    'systemjs-babel-build': '/libs/systemjs-plugin-babel/systemjs-babel-browser.js',
 
    // App Files:
@@ -31,8 +32,8 @@ System.config({
    'jquery': 'libs/jquery/dist/jquery.min.js',
    'bootstrap': 'libs/bootstrap/dist/js/bootstrap.min.js',
    'handlebars': 'libs/handlebars/dist/handlebars.min.js',
-   'sammy': 'libs/sammy/lib/sammy.js'
-  }
+   'sammy': 'libs/sammy/lib/sammy.js',
+  },
 });
 
 System.import('main');

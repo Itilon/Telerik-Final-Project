@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { template } from 'template';
 import { data } from 'data';
 
@@ -12,9 +13,17 @@ export function getTemplate(id) {
         data.getImage(id),
         data.getLatestArticleTitles(),
         data.getFirstParagraph()])
-        .then(([pictureTemplate, titleTemplate, footerTemplate, data, latestTitles, firstParagraph]) => {
-            $main.html(pictureTemplate([data, latestTitles, firstParagraph]));
+        .then((
+            [
+                pictureTemplate,
+                titleTemplate,
+                footerTemplate,
+                image,
+                latestTitles,
+                firstParagraph,
+            ]) => {
+            $main.html(pictureTemplate([image, latestTitles, firstParagraph]));
             $titularSection.html(titleTemplate(data.title));
             $footer.html(footerTemplate([firstParagraph, latestTitles]));
         });
-};
+}

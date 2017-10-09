@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { template } from 'template';
 import { data } from 'data';
 
@@ -12,9 +13,17 @@ export function getTemplate(params) {
         data.getFirstParagraph(),
         data.getAllArticles(),
         data.getLatestArticleTitles()])
-        .then(([mainTemplate, titleTemplate, footerTemplate, firstParagraph, allArticles, latestTitles]) => {
+        .then((
+            [
+                mainTemplate,
+                titleTemplate,
+                footerTemplate,
+                firstParagraph,
+                allArticles,
+                latestTitles]) => {
+            /* eslint-disable max-len */
             $main.html(mainTemplate([params, firstParagraph, allArticles, latestTitles]));
             $titularSection.html(titleTemplate(params));
             $footer.html(footerTemplate([firstParagraph, latestTitles]));
         });
-};
+}

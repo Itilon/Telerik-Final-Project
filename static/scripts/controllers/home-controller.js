@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { template } from 'template';
 import { data } from 'data';
 import { leftSlider } from 'leftSlider';
@@ -17,7 +18,17 @@ export function getTemplate() {
         data.getLatestArticleTitles(),
         data.getQuote(),
         data.getFirstParagraph()])
-            .then(([mainTemplate, sliderTemplate, footerTemplate, portfolio, latestImages, latestTitles, quote, firstParagraph]) => {
+            .then((
+                [
+                    mainTemplate,
+                    sliderTemplate,
+                    footerTemplate,
+                    portfolio,
+                    latestImages,
+                    latestTitles,
+                    quote,
+                    firstParagraph,
+                ]) => {
                 $main.html(mainTemplate([portfolio, quote, firstParagraph]));
                 $titularSection.html(sliderTemplate(latestImages));
                 $footer.html(footerTemplate([firstParagraph, latestTitles]));
@@ -25,4 +36,4 @@ export function getTemplate() {
             .then(leftSlider)
             .then(rightSlider)
             .then(popupGallery);
-};
+}

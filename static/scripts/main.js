@@ -1,3 +1,4 @@
+/* eslint-disable no-invalid-this */
 import $ from 'jquery';
 import Bootstrap from 'bootstrap';
 import Handlebars from 'handlebars';
@@ -8,7 +9,7 @@ import { firebase } from 'firebase';
 import { getTemplate as getAboutTemplate } from 'aboutController';
 import { getTemplate as getArticleTemplate } from 'articleController';
 import { getTemplate as getCategoryTemplate } from 'categoryController';
-import { getTemplate as getHomeTemplate } from 'homeController'; 
+import { getTemplate as getHomeTemplate } from 'homeController';
 import { getTemplate as getPictureTemplate } from 'pictureController';
 import { getTemplate as getPortfolioTemplate } from 'portfolioController';
 import { getTemplate as get404Template } from 'notFoundController';

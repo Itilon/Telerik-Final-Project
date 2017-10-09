@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const popupGallery = function() {
     const button = $('.zoom');
     const pictureWrapper = $('#picture-wrapper');
