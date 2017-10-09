@@ -14,12 +14,13 @@ export function getTemplate() {
         template.getTemplate('footer'),
         data.getPortfolio(),
         data.getLatestImages(),
+        data.getLatestArticleTitles(),
         data.getQuote(),
         data.getFirstParagraph()])
-            .then(([mainTemplate, sliderTemplate, footerTemplate, portfolio, latestImages, quote, firstParagraph]) => {
+            .then(([mainTemplate, sliderTemplate, footerTemplate, portfolio, latestImages, latestTitles, quote, firstParagraph]) => {
                 $main.html(mainTemplate([portfolio, quote, firstParagraph]));
                 $titularSection.html(sliderTemplate(latestImages));
-                $footer.html(footerTemplate(firstParagraph));
+                $footer.html(footerTemplate([firstParagraph, latestTitles]));
             })
             .then(leftSlider)
             .then(rightSlider)

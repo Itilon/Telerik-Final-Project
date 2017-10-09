@@ -15,6 +15,6 @@ export function getTemplate(id) {
         .then(([articleTemplate, titleTemplate, footerTemplate, data, latestTitles, firstParagraph]) => {
             $main.html(articleTemplate([data, latestTitles, firstParagraph]));
             $titularSection.html(titleTemplate(data.title));
-            $footer.html(footerTemplate(firstParagraph));
+            $footer.html(footerTemplate([firstParagraph, latestTitles]));
         });
 };

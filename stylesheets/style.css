@@ -282,10 +282,18 @@
     font-size: 2.4rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-#footer-section p {
+#footer-section .post {
+    color: #1c232D;
+    list-style-type: disc;
+    margin-left: 15px;
+}
+#footer-section p, #footer-section a {
     color: #8b949d;
     line-height: 2.1rem;
     font-size: 1.2rem;
+}
+#footer-section a:hover {
+    color: #ffffff;
 }
 #secondary-footer {
     background: url("../images/footer-bottom-bg.png") repeat-x;

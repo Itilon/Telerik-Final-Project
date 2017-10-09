@@ -9,10 +9,11 @@ export function getTemplate() {
     Promise.all([template.getTemplate('404'),
         template.getTemplate('title'),
         template.getTemplate('footer'),
-        data.getFirstParagraph()])
-        .then(([template, titleTemplate, footerTemplate, firstParagraph]) => {
+        data.getFirstParagraph(),
+        data.getLatestArticleTitles()])
+        .then(([template, titleTemplate, footerTemplate, firstParagraph, latestTitles]) => {
             $main.html(template);
             $titularSection.html(titleTemplate('404! Not Found!'));
-            $footer.html(footerTemplate(firstParagraph));
+            $footer.html(footerTemplate([firstParagraph, latestTitles]));
         })
 };

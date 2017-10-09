@@ -1,11 +1,15 @@
 <div class="row">
     <div class="col-sm-4">
         <h4>About Us</h4>
-        <p>{{this}}</p>
+        <p>{{this.[0]}}</p>
     </div>
     <div class="col-sm-4">
         <h4>Recent Posts</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus in, doloribus nam iste ad numquam beatae veritatis praesentium excepturi officia, veniam a? Reprehenderit optio beatae expedita maiores sunt adipisci sit!</p>
+            <ul>
+                {{#each this.[1]}}
+                <li class="post"><a href="/#/article/{{this.id}}">{{this.title}}</a></li>
+                {{/each}}
+            </ul>
     </div>
     <div class="col-sm-4">
         <h4>Recent Comments</h4>
