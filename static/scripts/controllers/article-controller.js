@@ -24,7 +24,7 @@ export function getTemplate(id) {
             ]) => {
             /* eslint-disable max-len */
             $main.html(articleTemplate([article, latestTitles, firstParagraph]));
-            $titularSection.html(titleTemplate(data.title));
+            $titularSection.html(titleTemplate(article.title));
             $footer.html(footerTemplate([firstParagraph, latestTitles]));
         });
 }

@@ -372,7 +372,7 @@
 #article-page-container .meta,
 #category-page-container .meta,
 #picture-page-container .meta {
-    background: url('../images/title-bg.png') no-repeat;
+    background: url("../images/title-bg.png") no-repeat;
     font-size: 1.8rem;
     padding: 15px 0 17px;
 }
@@ -389,20 +389,19 @@
 
 .comment-title {
     margin-top: 82px;
-    background: url('../images/title-bg.png') no-repeat bottom left;
+    background: url("../images/title-bg.png") no-repeat bottom left;
     color: #1f262d;
     font-family: 'Open Sans Condensed';
     font-size: 3rem;
     padding-bottom: 33px;
 }
 #comment-container .comment {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 #comment-container .avatar-container,
 #comment-container .comment-content {
     padding-left: 0;
 }
-
 #comment-container .avatar-box {
     height: 68px;
     width: 68px;
@@ -420,10 +419,21 @@
     text-align: center;
     font-size: 1.1rem;
 }
+#comment-container .col-xs-10 {
+    padding-left: 0;
+}
 #comment-container .comment-content {
     background-color: #ffffff;
     padding: 25px 15px 25px 30px;
     border-radius: 10px;
+}
+#comment-container .comment-arrow {
+    background: url("../images/comment-arrow.png") no-repeat;
+    height: 20px;
+    width: 10px;
+    position: absolute;
+    top: 23px;
+    left: -9px;
 }
 #comment-container h5 {
     color: #1f262d;

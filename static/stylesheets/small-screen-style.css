@@ -181,6 +181,9 @@
     #logo, #titular-section h1 {
         text-align: center;
     }
+    #titular-section .container {
+        padding-right: 0;
+    }
     #main-navigation {
         background: inherit;
     }
@@ -213,6 +216,17 @@
     }
 
     /* About, Article, Picture: */
+    
+    #about-page-container,
+    #about-page-container .col-sm-8,
+    #article-page-container,
+    #article-page-container .col-sm-8,
+    #category-page-container,
+    #category-page-container .col-sm-8,
+    #picture-page-container,
+    #picture-page-container .col-sm-8 {
+        padding-right: 0;
+    }
     #about-page-container .col-sm-4,
     #article-page-container .col-sm-4,
     #category-page-container .col-sm-4,
@@ -235,4 +249,14 @@
     #picture-page-container .widget p {
         font-size: 1.3rem;
     }
+}
+
+@media (max-width: 656px) {
+    #comment-container .col-xs-10 {
+        padding-left: 15px;
+    }
+    #comment-container .comment-arrow { 
+        left: 6px;
+    }
+
 }
