@@ -8,6 +8,14 @@ class Data {
             });
     };
     
+    getAllArticles() {
+        const ref = firebase.database().ref('articleList');
+        return ref.once('value')
+            .then((snapshot) => {
+                return snapshot.val();
+            });
+    };
+    
     getArticle(id) {
         id = Number(id);
         const ref = firebase.database().ref('articleList');

@@ -18,6 +18,8 @@
     #about-page-container .widget,
     #article-page-container h4,
     #article-page-container .widget,
+    #category-page-container h4,
+    #category-page-container .widget,
     #picture-page-container h4, 
     #picture-page-container .widget {
         margin-left: 42px;
@@ -40,12 +42,15 @@
     #about-page-container .widget,
     #article-page-container h4,
     #article-page-container .widget,
+    #category-page-container h4,
+    #category-page-container .widget,
     #picture-page-container h4,
     #picture-page-container .widget {
         margin-left: 32px;
     }
     #about-page-container .widget p, 
     #article-page-container .widget p,
+    #category-page-container .widget p,
     #picture-page-container .widget p {
         font-size: 1.2rem;
     }
@@ -68,6 +73,8 @@
     #about-page-container .widget,
     #article-page-container h4,
     #article-page-container .widget,
+    #category-page-container h4,
+    #category-page-container .widget,
     #picture-page-container h4,
     #picture-page-container .widget {
         margin-left: 22px;
@@ -83,6 +90,7 @@
     #heading,
     #about-page-container,
     #article-page-container,
+    #category-page-container,
     #picture-page-container,
     #footer-section, 
     #secondary-footer .container {
@@ -117,12 +125,15 @@
     #about-page-container .widget, 
     #article-page-container h4,
     #article-page-container .widget,
+    #category-page-container h4,
+    #category-page-container .widget,
     #picture-page-container h4, 
     #picture-page-container .widget {
         margin-left: 12px;
     }
     #about-page-container .widget p,
     #article-page-container .widget p,
+    #category-page-container .widget p,
     #picture-page-container .widget p {
         font-size: 1.1rem;
     }
@@ -137,6 +148,7 @@
     #heading,
     #about-page-container,
     #article-page-container,
+    #category-page-container,
     #picture-page-container,
     #footer-section, 
     #secondary-footer .container {
@@ -203,6 +215,7 @@
     /* About, Article, Picture: */
     #about-page-container .col-sm-4,
     #article-page-container .col-sm-4,
+    #category-page-container .col-sm-4,
     #picture-page-container .col-sm-4 {
         padding-left: 0;
     }
@@ -210,12 +223,15 @@
     #about-page-container .widget, 
     #article-page-container h4,
     #article-page-container .widget,
+    #category-page-container h4,
+    #category-page-container .widget,
     #picture-page-container h4, 
     #picture-page-container .widget {
         margin-left: 0;
     }
     #about-page-container .widget p,
     #article-page-container .widget p,
+    #category-page-container .widget p,
     #picture-page-container .widget p {
         font-size: 1.3rem;
     }

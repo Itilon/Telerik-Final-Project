@@ -30,7 +30,7 @@ const sammyApp = Sammy(function() {
     });
 
     this.get('#/blog', function() {
-        getCategoryTemplate('Handlebars Works');
+        getCategoryTemplate('Blog');
     });
 
     this.get('#/article/:id', function() {

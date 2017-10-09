@@ -171,7 +171,7 @@
     line-height: 2.1rem;
     font-size: 1.2rem;
 }
-#up-section .read-more {
+#up-section .read-more, #category-page-container .read-more {
     background: url("../images/read-more.png") no-repeat right bottom;
     color: #1c2329;
     height: 2.4rem;
@@ -334,9 +334,13 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 
-/* About, Article, Portfolio, Picture */
+/* About, Article, Category, Portfolio, Picture: */
 
-#heading, #about-page-container, #article-page-container, #picture-page-container {
+#heading,
+#about-page-container,
+#article-page-container,
+#category-page-container,
+#picture-page-container {
     width: 68.5%;
     margin: 0 auto;
 }
@@ -350,20 +354,23 @@
     color: #000000;
 }
 
-/* About, Article, Picture */
+/* About, Article, Category, Picture: */
 
 #about-page-container .col-sm-8, 
-#article-page-container .col-sm-8, 
+#article-page-container .col-sm-8,
+#category-page-container .col-sm-8, 
 #picture-page-container .col-sm-8 {
     padding-left: 0;
 }
 #about-page-container .col-sm-4,
 #article-page-container .col-sm-4,
+#category-page-container .col-sm-4,
 #picture-page-container .col-sm-4 {
     padding-right: 0;
 }
 #about-page-container .meta,
 #article-page-container .meta,
+#category-page-container .meta,
 #picture-page-container .meta {
     background: url('../images/title-bg.png') no-repeat;
     font-size: 1.8rem;
@@ -371,11 +378,15 @@
 }
 #about-page-container p,
 #article-page-container p,
+#category-page-container p,
 #picture-page-container p {
     margin-right: 20px;
     line-height: 2.1rem;
     font-family: 'Open Sans Condensed';
 }
+
+/* Comment Section: */
+
 .comment-title {
     margin-top: 82px;
     background: url('../images/title-bg.png') no-repeat bottom left;
@@ -425,16 +436,22 @@
     font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
     font-size: 1.3rem;
 }
+
+/* Widget Section: */
+
 #about-page-container h4, 
 #about-page-container .widget,
 #article-page-container h4,
 #article-page-container .widget,
+#category-page-container h4,
+#category-page-container .widget,
 #picture-page-container h4, 
 #picture-page-container .widget {
     margin-left: 52px;
 }
 #about-page-container h4, 
 #article-page-container h4,
+#category-page-container h4,
 #picture-page-container h4 {
     color: #1f262d;
     font-family: 'Open Sans Condensed';
@@ -444,6 +461,7 @@
 }
 #about-page-container .widget,
 #article-page-container .widget,
+#category-page-container .widget,
 #picture-page-container .widget {
     margin-bottom: 38px;
     background-color: #ffffff;
@@ -452,6 +470,7 @@
 }
 #about-page-container .widget li,
 #article-page-container .widget li,
+#category-page-container .widget li,
 #picture-page-container .widget li {
     margin-bottom: 12px;
 }
@@ -459,6 +478,8 @@
 #about-page-container .widget a,
 #article-page-container .widget p,
 #article-page-container .widget a,
+#category-page-container .widget p,
+#category-page-container .widget a,
 #picture-page-container .widget p,
 #picture-page-container .widget a {
     color: #5e5e5e;
@@ -467,8 +488,18 @@
 }
 #about-page-container .widget a:hover,
 #article-page-container .widget a:hover,
+#category-page-container .widget a:hover,
 #picture-page-container .widget a:hover {
     color: #1c2329;
+}
+
+/* Category */
+
+#category-page-container .article-container {
+    margin-bottom: 60px;
+}
+#category-page-container .read-more {
+    margin-right: 20px;
 }
 
 /* Portfolio */
