@@ -12,6 +12,27 @@
         <div class="row">
             <div class="col-sm-8">
                 <p class="meta">Posted by admin on October 7, 2017 in {{this.[0].title}}, Portfolio | 0 Comments</p>
+                <img class="img-responsive" src="{{this.[0].url}}" alt="{{this.[0].title}}">
+                {{#if this.[0].comments}}
+                <h3 class="comment-title">{{this.[0].numberOfComments}} Comments</h3>
+                <div id="comment-container" class="container-fluid">
+                    {{#each this.[0].comments}}
+                    <div class="comment row">
+                        <div class="avatar-container col-xs-2">
+                            <div class="avatar-box">
+                                <img class="avatar" src="../../images/avatar.png" alt="Avatar Image">
+                            </div>
+                            <span class="comment-date">{{this.date}}</span>
+                        </div>
+                        <div class="comment-content col-xs-10">
+                            <h5>{{this.author}} says:</h5>
+                            <p>{{this.content}}</p>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                {{/if}}
+                <h3 class="comment-title">Leave a Comment</h3>
             </div>
             <div class="col-sm-4">
                 <h4>Recent Posts</h4>

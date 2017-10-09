@@ -476,3 +476,9 @@
 #picture-wrapper #portfolio-container {
     margin-top: 0;
 }
+
+/* Picture */
+
+#picture-page-container img {
+    border: 6px solid #ffffff;
+}
