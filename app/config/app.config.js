@@ -8,8 +8,6 @@ const configApp = (app) => {
         path.join(__dirname, '../../static'))
     );
 
-    console.log(path.join(__dirname, '../../static'));
-
     app.use('/libs', express.static(
         path.join(__dirname, '../../node_modules'))
     );

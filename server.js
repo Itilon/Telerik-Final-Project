@@ -6,9 +6,7 @@ const async = () => {
 }
 
 async()
-    .then(() => require('./app/db'))
-        .then((db) => require('./app/data')(db))
-        .then((data) => require('./app/app')(data))
-        .then((app) => {
+    .then(() => require('./app/app')())
+    .then((app) => {
             app.listen(port, () => console.log(`Server starts at :${port}`));
-        });
+    });

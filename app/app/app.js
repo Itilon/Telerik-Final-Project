@@ -1,11 +1,11 @@
 const express = require('express');
 
-const init = (data) => {
+const init = () => {
     const app = express();
 
     require('../config/app.config')(app);
 
-    require('../router/router')(app, data);
+    require('../router/router')(app);
 
     return Promise.resolve(app);
 }

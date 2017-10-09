@@ -7,6 +7,7 @@ System.config({
 
    // App Files:
    'data': 'static/scripts/data.js',
+   'db': '../../app/db/db.js',
    'firebase': 'static/scripts/firebase.config.js',
    'main': 'static/scripts/main.js',
    'template': 'static/scripts/template.js',

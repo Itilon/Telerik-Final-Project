@@ -1,7 +1,9 @@
 class Data {
 
+    const db = firebase.database();
+
     getAboutContent() {
-        const ref = firebase.database().ref('aboutContent');
+        const ref = db.ref('aboutContent');
         return ref.once('value')
             .then((snapshot) => {
                 return snapshot.val();
@@ -9,7 +11,7 @@ class Data {
     };
     
     getAllArticles() {
-        const ref = firebase.database().ref('articleList');
+        const ref = db.ref('articleList');
         return ref.once('value')
             .then((snapshot) => {
                 return snapshot.val();
@@ -18,7 +20,7 @@ class Data {
     
     getArticle(id) {
         id = Number(id);
-        const ref = firebase.database().ref('articleList');
+        const ref = db.ref('articleList');
         const article = ref.child(id);
         return article.once('value')
             .then((snapshot) => {
@@ -27,7 +29,7 @@ class Data {
     };
 
     getFirstParagraph() {
-        const ref = firebase.database().ref('aboutContent');
+        const ref = db.ref('aboutContent');
         const firstParagraph = ref.child('content').child(0);
         return firstParagraph.once('value')
             .then((snapshot) => {
@@ -37,7 +39,7 @@ class Data {
 
     getImage(id) {
         id = Number(id);
-        const ref = firebase.database().ref('portfolio');
+        const ref = db.ref('portfolio');
         const image = ref.child(id);
         return image.once('value')
             .then((snapshot) => {
@@ -46,7 +48,7 @@ class Data {
     };
     
     getLatestArticleTitles() {
-        const ref = firebase.database().ref('articleList').limitToLast(5);
+        const ref = db.ref('articleList').limitToLast(5);
         return ref.once('value')
             .then((snapshot) => {
                 const latestArticles = snapshot.val();
@@ -61,7 +63,7 @@ class Data {
     };
 
     getLatestImages() {
-        const ref = firebase.database().ref('portfolio').limitToLast(5);
+        const ref = db.ref('portfolio').limitToLast(5);
         return ref.once('value')
             .then((snapshot) => {
                 const latestImages = snapshot.val();
@@ -71,7 +73,7 @@ class Data {
     };
 
     getPortfolio() {
-        const ref = firebase.database().ref('portfolio');
+        const ref = db.ref('portfolio');
         return ref.once('value')
             .then((snapshot) => {
                 return snapshot.val();
@@ -79,7 +81,7 @@ class Data {
     };
 
     getQuote() {
-        const ref = firebase.database().ref('quoteList');
+        const ref = db.ref('quoteList');
         return ref.once('value')
             .then((snapshot) => {
                 const quoteList = snapshot.val();
