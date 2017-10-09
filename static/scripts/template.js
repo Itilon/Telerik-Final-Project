@@ -15,7 +15,7 @@ class HandleBarsTemplate {
                 resolve(cache[name]);
             }
             else {
-                $.get(`./scripts/templates/${name}.handlebars`, (templateHtml) => {
+                $.get(`static/scripts/templates/${name}.handlebars`, (templateHtml) => {
                     const template = handlebars.compile(templateHtml);
                     cache[name] = template;
                     resolve(template);

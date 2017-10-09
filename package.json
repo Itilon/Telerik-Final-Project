@@ -4,9 +4,16 @@
   "description": "",
   "main": "main.js",
   "license": "MIT",
+  "scripts": {
+    "start": "gulp server"
+  },
   "dependencies": {
+    "body-parser": "^1.18.2",
     "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
+    "firebase-admin": "^5.4.1",
     "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
     "handlebars": "^4.0.10",
     "jquery": "^3.2.1",
     "sammy": "^0.7.6",

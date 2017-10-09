@@ -3,13 +3,13 @@
         <h5>
             <a href="#/home">Home</a>
             <span class="raquo">»</span>
-            {{this.[0].title}}
+            About Us
         </h5>
     </div>
-    <div id="article-page-container" class="container">
+    <div id="about-page-container" class="container">
         <div class="row">
             <div class="col-sm-8">
-                <p class="meta">Posted by {{this.[0].author}} on {{this.[0].date}} in {{this.[0].category}} | {{this.[0].numberOfComments}} Comments</p>
+                <p class="meta">Posted by {{this.[0].author}} on {{this.[0].date}} in the About Page | {{this.[0].numberOfComments}} Comments</p>
                 {{#each this.[0].content}}
                 <p>{{this}}</p>
                 {{/each}}
@@ -20,7 +20,7 @@
                     <div class="comment row">
                         <div class="avatar-container col-xs-2">
                             <div class="avatar-box">
-                                <img class="avatar" src="../../images/avatar.png" alt="Avatar Image">
+                                <img class="avatar" src="/static/images/avatar.png" alt="Avatar Image">
                             </div>
                             <span class="comment-date">{{this.date}}</span>
                         </div>
@@ -37,7 +37,7 @@
             <div class="col-sm-4">
                 <h4>Recent Posts</h4>
                 <aside class="widget">
-                    <ul>
+                   <ul>
                         {{#each this.[1]}}
                         <li><a href="/#/article/{{this.id}}">{{this.title}}</a></li>
                         {{/each}}
@@ -49,7 +49,7 @@
                 </aside>
                 <h4>About Us</h4>
                 <aside class="widget">
-                    <p>{{this.[2]}}</p>
+                    <p>{{this.[0].content.[0]}}</p>
                 </aside>
             </div>
         </div>

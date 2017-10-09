@@ -3,16 +3,16 @@
         <h5>
             <a href="#/home">Home</a>
             <span class="raquo">»</span>
-            About Us
+            <a href="#/portfolio">Portfolio</a>
+            <span class="raquo">»</span>
+            {{this.[0].title}}
         </h5>
     </div>
-    <div id="about-page-container" class="container">
+    <div id="picture-page-container" class="container">
         <div class="row">
             <div class="col-sm-8">
-                <p class="meta">Posted by {{this.[0].author}} on {{this.[0].date}} in the About Page | {{this.[0].numberOfComments}} Comments</p>
-                {{#each this.[0].content}}
-                <p>{{this}}</p>
-                {{/each}}
+                <p class="meta">Posted by admin on October 7, 2017 in {{this.[0].title}}, Portfolio | 0 Comments</p>
+                <img class="img-responsive" src="{{this.[0].url}}" alt="{{this.[0].title}}">
                 {{#if this.[0].comments}}
                 <h3 class="comment-title">{{this.[0].numberOfComments}} Comments</h3>
                 <div id="comment-container" class="container-fluid">
@@ -20,7 +20,7 @@
                     <div class="comment row">
                         <div class="avatar-container col-xs-2">
                             <div class="avatar-box">
-                                <img class="avatar" src="../../images/avatar.png" alt="Avatar Image">
+                                <img class="avatar" src="/static/images/avatar.png" alt="Avatar Image">
                             </div>
                             <span class="comment-date">{{this.date}}</span>
                         </div>
@@ -37,7 +37,7 @@
             <div class="col-sm-4">
                 <h4>Recent Posts</h4>
                 <aside class="widget">
-                   <ul>
+                    <ul>
                         {{#each this.[1]}}
                         <li><a href="/#/article/{{this.id}}">{{this.title}}</a></li>
                         {{/each}}
@@ -49,9 +49,8 @@
                 </aside>
                 <h4>About Us</h4>
                 <aside class="widget">
-                    <p>{{this.[0].content.[0]}}</p>
+                    <p>{{this.[2]}}</p>
                 </aside>
             </div>
         </div>
-    </div>
 </section>

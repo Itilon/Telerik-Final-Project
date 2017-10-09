@@ -1,11 +1,11 @@
-@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "/libs/font-awesome/css/font-awesome.min.css";
 @font-face {
     font-family: Elvish;
-    src: url("../fonts/elvish ring/elvish ring nfi.ttf");
+    src: url("/static/fonts/elvish ring/elvish ring nfi.ttf");
 }
 @font-face {
     font-family: 'Open Sans Condensed';
-    src: url("../fonts/open sans condensed/OpenSans-CondLight.ttf");
+    src: url("/static/fonts/open sans condensed/OpenSans-CondLight.ttf");
 }
 html, body, div, header, nav, aside, ul, li {
     margin: 0;
