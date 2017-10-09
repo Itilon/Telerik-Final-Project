@@ -10,9 +10,10 @@ export function getTemplate(id) {
         template.getTemplate('title'),
         template.getTemplate('footer'),
         data.getArticle(id),
+        data.getLatestArticleTitles(),
         data.getFirstParagraph()])
-        .then(([articleTemplate, titleTemplate, footerTemplate, data, firstParagraph]) => {
-            $main.html(articleTemplate([data, firstParagraph]));
+        .then(([articleTemplate, titleTemplate, footerTemplate, data, latestTitles, firstParagraph]) => {
+            $main.html(articleTemplate([data, latestTitles, firstParagraph]));
             $titularSection.html(titleTemplate(data.title));
             $footer.html(footerTemplate(firstParagraph));
         });

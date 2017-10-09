@@ -9,13 +9,13 @@
     <div id="about-page-container" class="container">
         <div class="row">
             <div class="col-sm-8">
-                <p class="meta">Posted by {{author}} on {{date}} in the About Page | {{numberOfComments}} Comments</p>
-                {{#each content}}
+                <p class="meta">Posted by {{this.[0].author}} on {{this.[0].date}} in the About Page | {{this.[0].numberOfComments}} Comments</p>
+                {{#each this.[0].content}}
                 <p>{{this}}</p>
                 {{/each}}
-                <h3 class="comment-title">{{numberOfComments}} Comments</h3>
+                <h3 class="comment-title">{{this.[0].numberOfComments}} Comments</h3>
                 <div id="comment-container" class="container-fluid">
-                    {{#each comments}}
+                    {{#each this.[0].comments}}
                     <div class="comment row">
                         <div class="avatar-container col-xs-2">
                             <div class="avatar-box">
@@ -35,7 +35,11 @@
             <div class="col-sm-4">
                 <h4>Recent Posts</h4>
                 <aside class="widget">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ex cumque laborum voluptates fugit nisi aut, dicta aliquam consequatur in, natus expedita cum inventore corporis accusantium distinctio! Veniam, deserunt, reprehenderit.</p>
+                   <ul>
+                        {{#each this.[1]}}
+                        <li><a href="/#/article/{{this.id}}">{{this.title}}</a></li>
+                        {{/each}}
+                    </ul>
                 </aside>
                 <h4>Recent Comments</h4>
                 <aside class="widget">
@@ -43,7 +47,7 @@
                 </aside>
                 <h4>About Us</h4>
                 <aside class="widget">
-                    <p>{{content.[0]}}</p>
+                    <p>{{this.[0].content.[0]}}</p>
                 </aside>
             </div>
         </div>

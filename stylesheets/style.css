@@ -442,12 +442,25 @@
     padding: 25px 15px 25px 30px;
     border-radius: 10px;
 }
+#about-page-container .widget li,
+#article-page-container .widget li,
+#picture-page-container .widget li {
+    margin-bottom: 12px;
+}
 #about-page-container .widget p,
+#about-page-container .widget a,
 #article-page-container .widget p,
-#picture-page-container .widget p {
+#article-page-container .widget a,
+#picture-page-container .widget p,
+#picture-page-container .widget a {
     color: #5e5e5e;
     font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
     font-size: 1.3rem;
+}
+#about-page-container .widget a:hover,
+#article-page-container .widget a:hover,
+#picture-page-container .widget a:hover {
+    color: #1c2329;
 }
 
 /* Portfolio */

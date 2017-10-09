@@ -16,7 +16,11 @@
             <div class="col-sm-4">
                 <h4>Recent Posts</h4>
                 <aside class="widget">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ex cumque laborum voluptates fugit nisi aut, dicta aliquam consequatur in, natus expedita cum inventore corporis accusantium distinctio! Veniam, deserunt, reprehenderit.</p>
+                    <ul>
+                        {{#each this.[1]}}
+                        <li><a href="/#/article/{{this.id}}">{{this.title}}</a></li>
+                        {{/each}}
+                    </ul>
                 </aside>
                 <h4>Recent Comments</h4>
                 <aside class="widget">
@@ -24,7 +28,7 @@
                 </aside>
                 <h4>About Us</h4>
                 <aside class="widget">
-                    <p>{{this.[1]}}</p>
+                    <p>{{this.[2]}}</p>
                 </aside>
             </div>
         </div>

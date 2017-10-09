@@ -36,6 +36,21 @@ class Data {
                 return snapshot.val();
             });
     };
+    
+    getLatestArticleTitles() {
+        const ref = firebase.database().ref('articleList').limitToLast(5);
+        return ref.once('value')
+            .then((snapshot) => {
+                const latestArticles = snapshot.val();
+                const latestTitles = []
+                latestArticles.splice(0, latestArticles.length - 5);
+                latestArticles.forEach((article) => {
+                    latestTitles.push({title: article.title, id: article.id}); 
+                });
+                
+                return latestTitles;
+            });
+    };
 
     getLatestImages() {
         const ref = firebase.database().ref('portfolio').limitToLast(5);
