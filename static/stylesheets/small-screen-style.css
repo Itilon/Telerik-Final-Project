@@ -187,6 +187,7 @@
     #main-navigation {
         background: inherit;
         border: 1px solid #8d96a0;
+        padding-left: 0;
     }
     #main-navigation ul, #footer-navigation ul {
         margin-bottom: 12px;

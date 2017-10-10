@@ -68,6 +68,9 @@
     height: 168px;
     background-size: cover;
 }
+#img-slider .slider-img-title {
+    display: none;
+}
 #featured-image {
     position: absolute;
     top: 270px;

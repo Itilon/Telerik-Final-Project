@@ -22,6 +22,8 @@
   "devDependencies": {
     "babel-eslint": "^8.0.1",
     "eslint-config-google": "^0.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-csslint": "^1.0.0",
     "gulp-eslint": "^4.0.0",
     "gulp-nodemon": "^2.2.1",
     "nodemon": "^1.12.1"
