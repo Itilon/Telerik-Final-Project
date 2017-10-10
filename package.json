@@ -2,7 +2,7 @@
   "name": "envisioned",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "server.js",
   "license": "MIT",
   "scripts": {
     "start": "gulp server"
