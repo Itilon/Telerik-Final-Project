@@ -8,6 +8,6 @@ const init = () => {
     require('../router/router')(app);
 
     return Promise.resolve(app);
-}
+};
 
 module.exports = init;

@@ -1,3 +1,4 @@
+/* globals firebase */
 (function() {
     const config = {
         apiKey: 'AIzaSyBKtOqIXLiu-DJ_S3wS_q28rmWEP1qxfZ8',

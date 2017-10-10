@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 import { template } from 'template';
 import { data } from 'data';
+import { popupGallery } from 'popupGallery';
 
 const $main = $('#main-section');
 const $titularSection = $('#titular-section');
@@ -25,5 +26,6 @@ export function getTemplate() {
             $main.html(mainTemplate(portfolio));
             $titularSection.html(titleTemplate('Portfolio'));
             $footer.html(footerTemplate([firstParagraph, latestTitles]));
-        });
+        })
+        .then(popupGallery);
 }

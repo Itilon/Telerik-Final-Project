@@ -1,4 +1,7 @@
 /* eslint-disable no-invalid-this */
+/* eslint-disable no-unused-vars */
+/* eslint-disable new-cap */
+/* eslint-disable dot-notation */
 import $ from 'jquery';
 import Bootstrap from 'bootstrap';
 import Handlebars from 'handlebars';
@@ -15,7 +18,6 @@ import { getTemplate as getPortfolioTemplate } from 'portfolioController';
 import { getTemplate as get404Template } from 'notFoundController';
 
 const sammyApp = Sammy(function() {
-
     this.get('/', function() {
         this.redirect('#/home');
     });

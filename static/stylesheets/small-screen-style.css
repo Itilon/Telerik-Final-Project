@@ -186,6 +186,7 @@
     }
     #main-navigation {
         background: inherit;
+        border: 1px solid #8d96a0;
     }
     #main-navigation ul, #footer-navigation ul {
         margin-bottom: 12px;
@@ -213,6 +214,19 @@
     }
     #awesome-container, #copyright {
         text-align: center;
+    }
+    #img-slider {
+        margin-bottom: 284px;
+    }
+    #img-slider .slider-img-container {
+        display: none;
+    }
+    #featured-image {
+        height: 300px;
+        width: 450px;
+    }
+    #featured-image-title {
+        top: 245px;
     }
 
     /* About, Article, Picture: */
@@ -252,11 +266,113 @@
 }
 
 @media (max-width: 656px) {
+    #featured-image {
+        height: 280px;
+        width: 420px;
+    }
+    #featured-image-title {
+        top: 225px;
+    }
+    #picture-wrapper .img-container {
+        height: 284px;
+    }
     #comment-container .col-xs-10 {
         padding-left: 15px;
     }
     #comment-container .comment-arrow { 
         left: 6px;
     }
+}
 
+@media (max-width: 564px) {
+    #featured-image {
+        height: 260px;
+        width: 390px;
+    }
+    #featured-image-title {
+        top: 205px;
+    }
+    #picture-wrapper .img-container {
+        height: 248px;
+    }
+}
+
+@media (max-width: 504px) {
+    #featured-image {
+        height: 250px;
+        width: 375px;
+    }
+    #featured-image-title {
+        top: 195px;
+    }
+    #picture-wrapper .img-container {
+        height: 248px;
+    }
+    #picture-wrapper .img-container {
+        height: 216px;
+    }
+}
+
+@media (max-width: 416px) {
+    #featured-image {
+        height: 230px;
+        width: 345px;
+    }
+    #featured-image-title {
+        top: 175px;
+    }
+    #picture-wrapper .img-container {
+        height: 184px;
+    }
+    #comment-container .col-xs-10 {
+        padding-left: 25px;
+    }
+    #comment-container .comment-arrow { 
+        left: 16px;
+    }
+}
+
+@media (max-width: 408px) {
+    #featured-image {
+        height: 210px;
+        width: 315px;
+    }
+    #featured-image-title {
+        top: 155px;
+    }
+    #secondary-footer { 
+        margin-top: 16px;
+        padding-top: 16px;
+        padding-bottom: 8px;
+    }
+    #main-navigation a, 
+    #footer-navigation a,
+    #copyright {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 322px) {
+    #img-slider {
+        margin-bottom: 204px;
+    }
+    #featured-image {
+        top: 310px;
+        height: 180px;
+        width: 270px;
+    }
+    #featured-image-title {
+        top: 125px;
+    }
+    #picture-wrapper .img-container {
+        height: 160px;
+    }
+    #secondary-footer { 
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 6px;
+    }
+    #copyright {
+        font-size: 1rem;
+    }
 }

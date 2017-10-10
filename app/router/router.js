@@ -1,11 +1,12 @@
-const fs = require('fs');
+/* globals __dirname */
 const path = require('path');
 const { Router } = require('express');
 
 const attachTo = (app) => {
-
     app.get('/', (req, res) => {
-            return res.sendFile(path.join(__dirname, '../../static/index.html'));
+            return res.sendFile(
+                path.join(__dirname, '../../static/index.html')
+            );
         });
 
     const router = new Router();
@@ -15,7 +16,7 @@ const attachTo = (app) => {
         .get('/favicon.ico', (req, res) => {
             res.status(204);
         });
-
 };
+
 
 module.exports = attachTo;
