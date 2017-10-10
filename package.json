@@ -7,6 +7,9 @@
   "scripts": {
     "start": "gulp server"
   },
+  "engines": {
+    "node": "8.4.0"
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "bootstrap": "^3.3.7",
