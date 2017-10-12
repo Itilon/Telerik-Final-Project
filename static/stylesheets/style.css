@@ -477,7 +477,10 @@
 #category-page-container .widget,
 #picture-page-container .widget {
     margin-bottom: 38px;
-    background-color: #ffffff;
+    background: linear-gradient(#ffffff, #f8f8f8);
+        background: -webkit-linear-gradient(#ffffff, #f8f8f8);
+        background: -o-linear-gradient(#ffffff, #f8f8f8);
+        background: -moz-linear-gradient(#ffffff, #f8f8f8);
     padding: 25px 15px 25px 30px;
     border-radius: 10px;
 }
@@ -507,6 +510,13 @@
 }
 
 /* Category */
+
+#category-page-container h3 {
+    color: #1f262d;
+    font-family: 'Open Sans Condensed';
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px #ffffff;
+}
 
 #category-page-container .article-container {
     margin-bottom: 60px;
