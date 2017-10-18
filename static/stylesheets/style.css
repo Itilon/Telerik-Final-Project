@@ -525,6 +525,18 @@
     margin-right: 20px;
 }
 
+#category-page-container .read-more:hover {
+    background: #2E363F;
+    border-radius: 8px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#category-page-container .read-more:hover span {
+    background: #2E363F;
+    padding: 0;
+}
+
 /* Portfolio */
 
 #picture-wrapper #portfolio-container {
